@@ -1,0 +1,500 @@
+/*
+Theme Name: Mas Colors
+Theme URL: http://
+Author: Agencia Mixen
+Author URL: http://mixen.mx/
+Description: Tema para el sitio Mas Colors.
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
+
+
+
+
+/***** FONTS *****/
+@font-face {
+    font-family: 'MyriadPro';
+    src: url(fonts/MyriadPro.ttf);
+}
+
+
+
+
+
+/***** GENERAL STYLES *****/
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+body {
+    font-family: 'MyriadPro', sans-serif;
+}
+
+.spacing {
+    padding: 100px 10px;
+}
+
+.light-spacing {
+    padding: 50px 10px;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.wrapper {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+a {
+    text-decoration: none!important;
+    outline: none!important;
+}
+
+
+
+
+
+/***** NAVBAR *****/
+.navbar {
+    display: none;
+}
+
+
+
+
+
+/****** INDEX ******/
+/* CABEZA */
+.index .cabeza {
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(5, 7, 51, 0.75);
+}
+
+.index .cabeza .left-side,
+.index .cabeza .right-side {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.index .cabeza .left-side p,
+.index .cabeza .right-side p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.index .cabeza .right-side {
+    text-align: right;
+}
+
+
+/* BANNER */
+.index .banner {
+    height: 100vh;
+    background: url(img/index/banner/banner1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* LOGOS */
+.index .logos {
+    text-align: center;
+    color: rgba(7, 7, 7, 1);
+    background: url(img/index/logos/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.index .logos h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.index .logos p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.index .logos .col-sm-4 {
+    height: auto;
+}
+
+.index .logos .col-sm-4 .img-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.index .logos .col-sm-4 .img-container img {
+    position: relative;
+    width: 100%;
+}
+
+
+/* CONTACTO */    
+.index .contacto {
+    position: relative;
+    height: 600px;
+}
+
+.index .contacto .container {
+    color: rgba(255, 255, 255, 1);
+    height: 100%;
+}
+
+.index .contacto .container .content.left-side {
+    position: relative;
+    z-index: 3;
+}
+
+.index .contacto .container h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.index .contacto .container p,
+.index .contacto .container a {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.index .contacto .container a {
+    color: rgba(255, 255, 255, 1);
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+}
+
+.index .contacto .container .form-container  {
+    max-width: 375px;
+}
+
+.index .contacto .container .form-container input,
+.index .contacto .container .form-container textarea {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none!important;
+}
+
+.index .contacto .container .form-container textarea {
+    height: auto;
+}
+
+.index .contacto .container .form-container input[type=submit] {
+    height: 30px;
+    width: 40px;
+    background-color: transparent;
+    background: url(img/icons/mail.png) no-repeat center center;
+    background-size: contain;
+}
+
+.index .contacto .container a:hover {
+    color: rgba(194, 45, 51, 1);
+}
+
+.index .contacto .bg.left-side,
+.index .contacto .bg.right-side {
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+.index .contacto .bg.left-side {
+    width: 70%;
+    left: 0;
+    background: url(img/index/contacto/bg.png) no-repeat center center;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.index .contacto .bg.right-side {
+    width: 40%;
+    right: 0;
+    z-index: 1;
+}
+
+.index .contacto .bg.right-side button {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.index .contacto .bg.right-side button iframe {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+
+
+
+/***** PIE *****/
+.pie {
+    background: url(img/index/logos/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.pie .container {
+    position: relative;
+    height: 250px;
+}
+
+.pie .container .img-container {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.pie .container .img-container.middle {
+    width: 350px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.pie .container .img-container.middle img {
+    width: 100%;
+}
+
+.pie .container .img-container.right-side {
+    height: 40px;
+    right: 0;
+}
+
+.pie .container .img-container.right-side img {
+    height: 100%;
+}
+
+
+
+
+
+/***** FOOTER *****/
+footer {
+    font-family: 'MyriadPro', sans-serif;
+    background-color: rgba(5, 7, 51, 1);
+}
+
+footer .footer-rights {
+    padding: 10px 0;
+}
+
+footer .footer-rights p {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+footer .footer-rights a {
+    color: rgba(200, 200, 200, 1);
+    text-decoration: none!important;
+    outline: none!important;
+}
+
+footer .footer-rights a:hover {
+    color: rgba(250, 250, 250, 1);
+}
+
+
+
+
+
+/***** Parallax CSS *****/
+.parallax-container {
+    position: relative;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax img {
+    position: absolute;
+    display: none;
+    min-height: 100%;
+    width: 100%;
+    min-width: 1920px;
+    bottom: 0;
+    background-position: center;
+}
+
+
+
+
+
+/***** RESPONSIVE *****/
+@media(max-width: 1200px) {
+    /***** GENERAL STYLES *****/
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    /***** GENERAL STYLES *****/
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .bttnMesa {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    /***** GENERAL STYLES *****/
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+
+    /****** INDEX ******/
+    /* CABEZA */
+    .index .cabeza {
+        font-size: 16px;
+    }
+
+    /* LOGOS */
+    .index .logos h1 {
+        font-size: 26px;
+    }
+    .index .logos p {
+        font-size: 18px;
+    }
+    .index .logos .col-sm-4 .img-container {
+        margin-bottom: 5px;
+    }
+    .index .logos .col-sm-4 .img-container img {
+        width: 200px;
+    }
+
+    /* CONTACTO */    
+    .index .contacto {
+        height: auto;
+    }
+    .index .contacto .container {
+        height: auto;
+    }
+    .index .contacto .container .content.left-side {
+        text-align: center;
+    }
+    .index .contacto .container h1 {
+        font-size: 28px;
+    }
+    .index .contacto .container p,
+    .index .contacto .container a {
+        font-size: 18px;
+    }
+    .index .contacto .container .form-container  {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    .index .contacto .container .form-container .text-right {
+        text-align: center;
+    }
+    .index .contacto .bg.left-side {
+        height: calc(100% - 250px);
+        width: 120%;
+    }
+    .index .contacto .bg.right-side {
+        position: relative;
+        height: 250px;
+        width: 100%;
+    }
+
+
+    /***** PIE *****/
+    .pie .container {
+        height: auto;
+        padding: 50px;
+    }
+    .pie .container .img-container {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+    }
+    .pie .container .img-container.middle {
+        width: 350px;
+    }
+
+    .pie .container .img-container.right-side {
+        text-align: center;
+        height: 35px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 550px) {
+
+}
